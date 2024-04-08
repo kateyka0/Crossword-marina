@@ -1,28 +1,29 @@
-:root {
+ :root {
         --strFontFace: Geneva, Arial, sans-serif;
         --strFontSize: medium;
-        --strTextColor: #400040;
+        --strTextColor: #000000;
         --strTitleColor: #000000;
 
-        --strFuncLightColor: #fdbec8;
-        --strFuncShadeColor: #7d3e48;
-        --strLinkColor: #55002b;
-        --strVLinkColor: #55002b;
+        --strFuncLightColor: #ffffff;
+        --strFuncShadeColor: #7f7f7f;
+        --strLinkColor: #0000ff;
+        --strVLinkColor: #0000cc;
 
-        --strNavBarColor: #800080;
-        --strNavLightColor: #bf7fbf;
-        --strNavShadeColor: #400040;
+        --strNavBarColor: #000000;
+        --strNavLightColor: #7f7f7f;
+        --strNavShadeColor: #000000;
         --strNavTextColor: #ffffff;
 
-        --strPageBGColor: #e8b5f4;
-        --strExBGColor: #fb7d91;
+        --strPageBGColor: #c0c0c0;
+        --strExBGColor: #ffffff;
       }
 
       body {
         font-family: var(--strFontFace);
         background-color: var(--strPageBGColor);
         color: var(--strTextColor);
-        background-image: url(../images/e04e973--vadimvasenin-depositphotos.jpg);
+        background-image: url(../images/bgimg.jpg);
+
         margin-right: 5%;
         margin-left: 5%;
         font-size: var(--strFontSize);
@@ -47,6 +48,7 @@
         padding: 0.5em;
         text-align: center;
         color: var(--strTitleColor);
+        background-color: rgba(127, 127, 127, 0.5);
       }
 
       button {
@@ -57,12 +59,12 @@
 
       .ExerciseTitle {
         font-size: 140%;
-        color: var(--strTitleColor);
+        color: #ffffff;
       }
 
       .ExerciseSubtitle {
         font-size: 120%;
-        color: var(--strTitleColor);
+        color: #ffffff;
       }
 
       div.StdDiv,
@@ -151,7 +153,11 @@
         color: var(--strTitleColor);
       }
 
-      
+      span.Instructions {
+      }
+
+      div.ExerciseText {
+      }
 
       .FeedbackText,
       .FeedbackText span.CorrectAnswer,
@@ -173,7 +179,8 @@
         text-align: left;
       }
 
-      
+      span.CorrectMark {
+      }
 
       input,
       textarea {
@@ -342,23 +349,23 @@
       }
 
       table.CrosswordGrid td.BlankCell {
-        background-color: #421140;
-        color: #5881a8;
+        background-color: rgb(20, 52, 32);
+        color: #000000;
       }
 
       table.CrosswordGrid td.LetterOnlyCell {
         text-align: center;
         vertical-align: middle;
-        background-color: #e9bbe4;
-        color: #5b2150;
+        background-color: #7dc49f;
+        color: #000000;
         font-weight: bold;
       }
 
       table.CrosswordGrid td.NumLetterCell {
         text-align: left;
         vertical-align: top;
-        background-color: #ce8de3;
-        color: #5b2150;
+        background-color: #7dc49f;
+        color: #000000;
         padding: 1px;
         font-weight: bold;
       }
